@@ -1,0 +1,13 @@
+idf_component_register(
+        SRCS 
+            "main.c"
+        INCLUDE_DIRS 
+            "."
+        REQUIRES
+            tinyusb  
+            driver 
+            esp_timer
+            freertos
+            bsp
+            app
+)
