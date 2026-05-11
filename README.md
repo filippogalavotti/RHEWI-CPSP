@@ -1,6 +1,3 @@
-# RHEWI-CPSP
-rocketpy hil ekf waypoint interception
-
 # RHEWI-CPSP: Rocketpy Hardware-in-the-Loop EKF Waypoint Interception
 
 **RHEWI-CPSP** is a high-fidelity 6-DOF simulation environment and flight software suite designed for testing Guidance, Navigation, and Control (GNC) algorithms. This project integrates a **Python-based physics engine** with an **embedded C flight computer** (Arduino Nano ESP32) to perform Hardware-in-the-Loop (HIL) testing.
