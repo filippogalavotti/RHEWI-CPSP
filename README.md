@@ -19,8 +19,8 @@ The system allows developers to bridge the gap between simulation and real-world
 
 * **Advanced State Estimation**: 16-state EKF implemented in high-performance C, estimating position, velocity, acceleration, orientation (quaternions), and angular rates.
 * **Active Control**:
-* **Guidance**: Proportional navigation logic to steer toward a target coordinate.
-* **Roll Stabilization**: PD control for roll damping using aero-fins.
+  * **Guidance**: Proportional navigation logic to steer toward a target coordinate.
+  * **Roll Stabilization**: PD control for roll damping using aero-fins.
 
 
 
