@@ -1,0 +1,161 @@
+{
+   "widgets": [
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "BARO_z",
+               "sourceNames": [
+                  "BARO_z"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "BARO_z",
+                  "_id": "data-serie-0",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "EKF_z",
+               "sourceNames": [
+                  "EKF_z"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "EKF_z",
+                  "_id": "data-serie-8",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "RAW_roll",
+               "sourceNames": [
+                  "RAW_roll"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "RAW_roll",
+                  "_id": "data-serie-1",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "EKF_roll",
+               "sourceNames": [
+                  "EKF_roll"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "EKF_roll",
+                  "_id": "data-serie-9",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "RAW_pitch",
+               "sourceNames": [
+                  "RAW_pitch"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "RAW_pitch",
+                  "_id": "data-serie-2",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "EKF_pitch",
+               "sourceNames": [
+                  "EKF_pitch"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "EKF_pitch",
+                  "_id": "data-serie-10",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "RAW_yaw",
+               "sourceNames": [
+                  "RAW_yaw"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "RAW_yaw",
+                  "_id": "data-serie-3",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "EKF_yaw",
+               "sourceNames": [
+                  "EKF_yaw"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "EKF_yaw",
+                  "_id": "data-serie-11",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      }
+   ],
+   "viewDuration": 15
+}
