@@ -59,7 +59,7 @@ The firmware uses the **Arduino Nano ESP32** onboard RGB LED to signal the inter
 
 * **Python**: `rocketpy`, `numpy`, `pyserial`, `matplotlib`
 * **Hardware**: Arduino Nano ESP32
-* **Toolchain**: ESP-IDF (with ESP32 support and TinyUSB library)
+* **Toolchain**: ESP-IDF
 
 ### 2. Running a HIL Simulation
 
