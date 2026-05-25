@@ -369,7 +369,31 @@ The project demonstrates a **well-balanced division between embedded systems eng
 
 This separation of concerns, combined with a fully functional HIL loop, represents a **complete and coherent experimental framework**, suitable for advanced research and prototyping in guidance and control systems.
 
+## Useful References
 
-## ⚖️ License
+### Sensors Documentation
+- **MS8607 – Pressure, Humidity, Temperature Sensor**  
+  https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS8607-02BA01&DocType=DS&DocLang=English  
+
+- **BNO055 – 9-DOF Absolute Orientation Sensor**  
+  https://cdn-learn.adafruit.com/assets/assets/000/125/776/original/bst-bno055-ds000.pdf  
+
+---
+
+### Learning Resources
+- **Kalman Filter – Intuitive Introduction (YouTube)**  
+  https://www.youtube.com/watch?v=HCd-leV8OkU  
+
+---
+
+### Libraries & Tools
+- **RocketPy – Rocket Flight Simulation Framework**  
+  https://github.com/RocketPy-Team/RocketPy  
+
+- **ESP-IDF – ESP32 Development Framework**  
+  https://docs.espressif.com/projects/esp-idf/en/latest/esp32/  
+``
+
+## License
 
 This project is provided for educational and research purposes in experimental rocketry. Use at your own risk.
