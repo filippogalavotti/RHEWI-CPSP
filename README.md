@@ -369,6 +369,36 @@ The project demonstrates a **well-balanced division between embedded systems eng
 
 This separation of concerns, combined with a fully functional HIL loop, represents a **complete and coherent experimental framework**, suitable for advanced research and prototyping in guidance and control systems.
 
+### 📄 EKF Documentation (`/docs`)
+
+This folder contains detailed documentation supporting the design, implementation, and validation of the Extended Kalman Filter used in this project:
+
+- **Kalman_Filter.pdf**  
+  Comprehensive theoretical background on the Extended Kalman Filter, including:
+  - Nonlinear system modeling  
+  - Prediction and update steps  
+  - State vector and measurement design  
+  - Quaternion-based orientation representation  
+  - Uncertainty propagation and covariance analysis  
+
+- **Report Kalman Filter.pdf**  
+  Project-oriented EKF design report covering:
+  - Sensor fusion strategy (barometer + IMU + GPS)  
+  - Model assumptions and formulation  
+  - Tuning of covariance matrices (Q and R)  
+  - Practical implementation details and performance considerations  
+
+- **Kalman_Filter_Procedure.pdf**  
+  Validation and testing methodology for the EKF:
+  - Structured test plan (simulation, real data, flight scenarios)  
+  - Calibration procedure and initialization issues  
+  - Performance evaluation and debugging strategy  
+  - Guidelines for systematic filter tuning and analysis  
+
+---
+
+These documents provide both the **theoretical foundation** and the **engineering methodology** behind the EKF implementation, bridging the gap between mathematical modeling and embedded deployment.
+
 ## Useful References
 
 ### Sensors Documentation
@@ -392,7 +422,6 @@ This separation of concerns, combined with a fully functional HIL loop, represen
 
 - **ESP-IDF – ESP32 Development Framework**  
   https://docs.espressif.com/projects/esp-idf/en/latest/esp32/  
-``
 
 ## License
 
