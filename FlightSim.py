@@ -25,9 +25,8 @@ except NameError:
     BASE_DIR = Path(".").resolve()
 
 # ── MISSION ────────────────────────────────────────────────────────────────
-LAUNCH_LAT, LAUNCH_LON, LAUNCH_ALT = 44.48800684283911, 11.32889678578902, 0.0
-
-TARGET_LAT, TARGET_LON, TARGET_ALT = 44.48256575070729, 11.354638821647374, 1000.0
+LAUNCH_LAT, LAUNCH_LON, LAUNCH_ALT = 44.48800684283911, 11.32889678578902, 100.0
+TARGET_LAT, TARGET_LON, TARGET_ALT = 44.492287782567324, 11.310228180773771, 1500.0
 
 # ── PLOTTING CONSTANTS ────────────────────────────────────────────────────────────────
 
@@ -58,7 +57,7 @@ _NOSE_H    = 0.10
 GUIDANCE_KP_BOOST = 0.006   # [cm per m error] during boost
 GUIDANCE_KP_COAST = 0.004   # coast (lower q, need slightly more cm)
 CM_CLIP           = 12.0    # hard limit — large enough to dominate fin restoring
-INTERCEPT_RADIUS  = 10.0     # meters
+INTERCEPT_RADIUS  = 30.0     # meters
 
 # ── ROLL CONTROL ───────────────────────────────────────────────────────────
 ROLL_SETPOINT  = 0     # deg — desired roll angle
@@ -912,6 +911,7 @@ class GuidanceController:
             # RX: read 3 floats back (cm_cmd, cn_cmd, cant)
             raw = self._ser.read(76)   # 19 × 4 bytes [cm_cmd, cn_cmd, cant, x, y, z, vx, vy, vz, ax, ay, az, e0, e1, e2, e3, wx, wy, wz]
             self._rtt_samples.append(time.perf_counter() - _t0)
+            ekf_state = np.zeros(16)
             cm_cmd, cn_cmd, cant, ekf_state[0], ekf_state[1], ekf_state[2], ekf_state[3], ekf_state[4], ekf_state[5], ekf_state[6], ekf_state[7], ekf_state[8], ekf_state[9], ekf_state[10], ekf_state[11], ekf_state[12], ekf_state[13], ekf_state[14], ekf_state[15] = struct.unpack("<19f", raw)
         else:
             # ── KALMAN FILTER CALL ─────────────────────────────────────────────────
